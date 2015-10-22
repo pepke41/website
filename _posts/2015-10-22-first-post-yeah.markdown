@@ -2,7 +2,7 @@
 layout: post
 title:  "Grace Hopper Survivor"
 date:   2015-10-22 15:25:06
-categories: jekyll update
+categories: All things Emily
 ---
 
 If you haven't heard of the Grace Hopper Conference Convention for Women in Computing, go check it out! I went to GHC 2015 last week, and now if you keep reading, you're going to here a little bit about my experiences.
