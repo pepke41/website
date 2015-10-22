@@ -19,4 +19,4 @@ I know this was a little scatter brained, but I wanted to get rid of the welcome
 
 Until next time, Emily.
 
-![Casual Selfie](/Users/EmilyPepke/Documents/IMG_7632.png)
+![Casual Selfie](/IMG_7632.png)
