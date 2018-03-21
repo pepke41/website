@@ -1,2 +1,8 @@
-_site
-.sass-cache
+# Dependencies
+node_modules/
+
+# Build cache
+.next/
+
+# Build output
+out/
