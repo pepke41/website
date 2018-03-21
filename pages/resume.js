@@ -2,7 +2,6 @@ import Layouts from '../components/layout'
 import Head from 'next/head'
 import { css } from 'emotion'
 import styled from 'react-emotion'
-import Link from 'next/link'
 
 const resumeLayout = css `
   text-align: center;
@@ -28,8 +27,8 @@ export default () => (
           <TableDiv>elpepke41@gmail.com</TableDiv>
         </tr>
         <tr>
-          <TableDiv><Link href="https://github.com/pepke41"><a> GitHub</a></Link></TableDiv>
-          <TableDiv><Link href="emilypepke.com"><a>Personal Website</a></Link></TableDiv>
+          <TableDiv><a href="https://github.com/pepke41">GitHub</a></TableDiv>
+          <TableDiv><a href="emilypepke.com">Personal Website</a></TableDiv>
         </tr>
       </table>
     </div>
@@ -75,13 +74,13 @@ export default () => (
       </ul>
       <h3>Projects</h3>
       <hr/>
-      <h5><Link href="/dnd-companion"><a>Dungeons And Dragons Companion</a></Link></h5>
+      <h5><a href="https://pepke41.github.io/dnd-companion">Dungeons And Dragons Companion</a></h5>
       <ul>
         <li>Single page application built with Ember.js</li>
         <li>Used Firebase for storing data and authentication</li>
         <li>Set up static site hosting through Github Pages</li>
       </ul>
-      <h5><Link href="https://github.com/pepke41/imposter.me"><a>Imposter.me</a></Link></h5>
+      <h5><a href="https://github.com/pepke41/imposter.me">Imposter.me</a></h5>
       <ul>
         <li>Hackathon project using Ruby on Rails and Polymer</li>
         <li>Built a fully functioning web application in two days contributing
@@ -89,12 +88,12 @@ export default () => (
         <li>Used JavaScript, HTML/CSS, and Materialize</li>
         <li>Hosted on Heroku</li>
       </ul>
-      <h5><Link href= "https://github.com/pepke41/cathedral_climber"><a>Cathedral Climber</a></Link></h5>
+      <h5><a href= "https://github.com/pepke41/cathedral_climber">Cathedral Climber</a></h5>
       <ul>
         <li>Text based game built in python</li>
         <li>Game was created using Test Driven Development</li>
       </ul>
-      <h5><Link href= "https://github.com/pepke41/pepke41.github.io"><a>emilypepke.com</a></Link></h5>
+      <h5><a href= "https://github.com/pepke41/pepke41.github.io">emilypepke.com</a></h5>
       <ul>
         <li>Personal Website built using React, Next.js and Emotion</li>
       </ul>
