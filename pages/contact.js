@@ -20,7 +20,7 @@ const card = css`
   font-family: Helvetica;
 `
 const cardTitle = css`
-  background-image: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/06/galaxy-wallpapers-10.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2017/04/22/00/14/universe-2250310_1280.jpg");
   height: 80%;
   display: flex;
   align-items: flex-end;
