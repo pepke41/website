@@ -1,15 +1,15 @@
-import Link from 'next/link'
-import { css } from 'emotion'
-import { darken } from 'polished'
+import Link from "next/link";
+import styled from "@emotion/styled";
+import { darken } from "polished";
 
-const headNav = css `
+const HeadNav = styled.ul`
   list-style-type: none;
   background-color: pink;
   margin: 0;
   padding: 0;
   overflow: hidden;
-`
-const innerNav = css `
+`;
+const NavLink = styled.a`
   display: block;
   color: white;
   text-align: center;
@@ -17,27 +17,35 @@ const innerNav = css `
   text-decoration: none;
   float: left;
   &:hover {
-    background-color: ${darken(0.02, 'pink')};
+    background-color: ${darken(0.02, "pink")};
   }
-`
+`;
 
 const Header = () => (
   <div>
-    <ul className={headNav}>
+    <HeadNav>
       <li>
-        <Link href="/"><a className={innerNav}>Home</a></Link>
+        <Link href="/">
+          <NavLink>Home</NavLink>
+        </Link>
       </li>
       <li>
-        <Link href="/contact"><a className={innerNav}>Contact Me</a></Link>
+        <Link href="/contact">
+          <NavLink>Contact Me</NavLink>
+        </Link>
       </li>
       <li>
-        <Link href="/resume"><a className={innerNav}>Resume</a></Link>
+        <Link href="/resume">
+          <NavLink>Resume</NavLink>
+        </Link>
       </li>
       <li>
-        <Link href="/about"><a className={innerNav}>About Me</a></Link>
+        <Link href="/about">
+          <NavLink>About Me</NavLink>
+        </Link>
       </li>
-    </ul>
+    </HeadNav>
   </div>
-)
+);
 
-export default Header
+export default Header;

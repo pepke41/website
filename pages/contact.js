@@ -1,10 +1,15 @@
-import Header from '../components/header'
-import Head from 'next/head'
-import { css } from 'emotion'
-import Link from 'next/link'
-import '../components/layout'
+import Header from "../components/header";
+import Head from "next/head";
+import styled from "@emotion/styled";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLinkedinIn,
+  faTwitter,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
-const contactPageLayout = css`
+const ContactPageLayout = styled.div`
   margin: 0 auto;
   max-width: 960px;
   display: flex;
@@ -12,22 +17,22 @@ const contactPageLayout = css`
   align-items: center;
   height: auto;
   min-height: calc(100vh - 46px);
-`
-const card = css`
+`;
+const Card = styled.div`
   width: 600px;
   height: 200px;
   box-shadow: 1px 1px 5px grey;
   font-family: Helvetica;
-`
-const cardTitle = css`
-  background-image: url("https://cdn.pixabay.com/photo/2017/04/22/00/14/universe-2250310_1280.jpg");
+`;
+const CardTitle = styled.div`
+  background-image: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/06/galaxy-wallpapers-10.jpg");
   height: 80%;
   display: flex;
   align-items: flex-end;
   padding: 5px;
   color: white;
-`
-const contactCard = css`
+`;
+const ContactCard = styled.ul`
   list-style: none;
   margin: 0;
   display: flex;
@@ -41,35 +46,43 @@ const contactCard = css`
       padding-left: 5px;
     }
   }
-`
-const title = css`
+`;
+const Title = styled.span`
   font-size: 1.5em;
-`
-export default () => (
-  <div>
-    <Head>
-      <title>Contact Me</title>
-      <script src="https://use.fontawesome.com/a3e6efdbca.js"></script>
-    </Head>
-    <Header>
-    </Header>
-    <div className={contactPageLayout}>
-      <div className={card}>
-        <div className={cardTitle}>
-          <span className={title}>Contact me online</span>
-        </div>
-        <ul className={contactCard}>
-            <li><i className="fa fa-linkedin" aria-hidden="true"></i> <Link
-                  href="https://www.linkedin.com/in/emily-pepke-268943107"><a>Emily
-                  Pepke</a></Link></li>
-            <li><i className="fa fa-twitter" aria-hidden="true"></i> <Link
-                                        href="https://twitter.com/emilyofsuburbia"><a>@EmilyofSuburbia</a></Link></li>
-            <li><i className="fa fa-github" aria-hidden="true"></i> <Link
-                                        href="https://github.com/pepke41"><a>@pepke41</a></Link></li>
-            <li><i className="fa fa-envelope" aria-hidden="true"></i>&nbsp;elpepke41@gmail.com</li>
-        </ul>
-      </div>
+`;
+export default function ContactPage() {
+  return (
+    <div>
+      <Head>
+        <title>Contact Me</title>
+      </Head>
+      <Header></Header>
+      <ContactPageLayout>
+        <Card>
+          <CardTitle>
+            <Title>Contact me online</Title>
+          </CardTitle>
+          <ContactCard>
+            <li>
+              <FontAwesomeIcon icon={faLinkedinIn} />{" "}
+              <a href="https://www.linkedin.com/in/emily-pepke-268943107">
+                Emily Pepke
+              </a>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faTwitter} />{" "}
+              <a href="https://twitter.com/emilyofsuburbia">@EmilyofSuburbia</a>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faGithub} />{" "}
+              <a href="https://github.com/pepke41">@pepke41</a>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faEnvelope} /> &nbsp;elpepke41@gmail.com
+            </li>
+          </ContactCard>
+        </Card>
+      </ContactPageLayout>
     </div>
-  </div>
-)
-
+  );
+}

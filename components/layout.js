@@ -1,24 +1,16 @@
-import Header from './header'
-import { css, injectGlobal } from 'emotion'
+import Header from "./header";
+import styled from "@emotion/styled";
 
-injectGlobal`
-  html,body {
-    margin: 0px auto;
-  }
-`
-const pageLayout = css `
+const PageLayout = styled.div`
   margin: 0 auto;
   max-width: 960px;
-`
+`;
 
-const Layout = (props) => (
-  <div>
-    <Header/>
-    <div className={pageLayout}>
-      {props.children}
+export default function Layout(props) {
+  return (
+    <div>
+      <Header />
+      <PageLayout>{props.children}</PageLayout>
     </div>
-  </div>
-)
-
-export default Layout
-
+  );
+}
