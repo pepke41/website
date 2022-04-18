@@ -26,7 +26,7 @@ const Index = () => (
       <div>
         <Title>Emily Pepke</Title>
       </div>
-      <Subtitle>Creator of Cool Things at Prudential Customer Office</Subtitle>
+      <Subtitle>Creator of Cool Things at Apple</Subtitle>
       <img
         alt="cute-af-superman"
         src="http://31.media.tumblr.com/781c49680acc14909792edbb7a0f09d2/tumblr_mu5ov1QgJj1rsoxqjo1_500.gif"
